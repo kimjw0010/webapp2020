@@ -50,7 +50,7 @@ public class MemberController extends HttpServlet {
         }
         if (searched != null) {
             request.setAttribute("member", searched);
-            request.getRequestDispatcher("address-table1.jsp").forward(request, response);
+            request.getRequestDispatcher("address-table.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("not-found.jsp").forward(request, response);
         }
